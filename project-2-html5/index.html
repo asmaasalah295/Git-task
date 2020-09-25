@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Asmaa Salah task2-html5</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<!--  fontawesome -->
+		<link rel="stylesheet" href="css/brands.min.css"/>
+		<link rel="stylesheet" href="css/fontawesome.min.css"/>
+		<link rel="stylesheet" href="css/solid.min.css"/>
+	
+	</head>
+	<body>
+	
+		<!-- start header -->
+		
+		<header>
+			
+			<span class="home"><a href="#Home" class="home">Home</a></span>
+			<span class="r"><a href="#audio">Music</a></span>
+
+			<span class="pp"><i class="fas fa-music"></i></span>
+			<span class="r"><a href="#form">Regist</a></span>
+			<!--<p id="have"></p>-->
+			
+			<span class="pp"><i class="fas fa-cash-register"></i></span>
+			
+			<!--  <form name="register"> -->
+				<label class="as">search</label>
+				<input type="search" placeholder="search.." class="ar">
+			<!--  </form>  -->
+			
+			<span class="rs"><i class="fas fa-search"></i></span>
+			
+		</header> <br><br>
+		
+		<!-- end header -->
+		
+		<!-- start navigation -->
+		
+		<nav>
+			<ul>
+				<li class="R"><a href="#facebook"><i class="fab fa-facebook-square"></i></a></li>
+				<li class="Rr"><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
+				<li class="Rf"><a href="#instagram"><i class="fab fa-instagram-square"></i></a></li>
+			</ul>
+		</nav>
+		
+		<!-- end navigation -->
+		
+		
+		<!-- start section1 -->
+		
+		<section>
+			<audio controls autoplay loop preload="metadata" id="audio">
+				<source src="012.mp33.mp3" type="audio/mpeg">
+				<source src="012.ogg" type="audio/ogg">
+				Your Browser Does Not Support Audio Technology
+			</audio>
+		</section>
+		
+		<!-- end section1 -->
+	
+	
+		<!-- start section2 -->
+		
+		<section>
+			<video controls width="800" height="500" autoplay preload="auto" poster="images/images 1.jpg">
+				<source src="001.mp4" type="video/mp4">
+				<source src="001.ogg" type="video/ogg">
+				<source src="001.webm" type="video/webm">
+				Your Browser Does Not Support Video Technology
+			</video>
+		</section>
+		
+		<!-- end section2 -->
+		
+		
+		<!-- start Article -->
+		
+		<article id="form">
+			<form name="register">
+				<p>have a seet in our party</p>
+				
+				<label>user_name</label><br>
+				<input type="text" name="Username" placeholder="Type your name" class="aa"><br>
+				
+				
+				<label>E-mail</label><br>
+				<input type="email" name="email" disabled value="asmaaeng@gmail.com" class="aa"><br>
+				
+				<label>E-mail</label><br>
+				<input type="email" name="email" multiple class="aa"><br>
+				
+				<label>type the date of party</label><br>
+				<input type="datetime-local" name="datetime" class="aa"><br>
+				
+				<label>phone number</label><br>
+				<input type="phone" name="phone" placeholder="Type your Number" class="aa"><br>
+				
+			
+				<input type="submit" value="send info" class="su">
+				<input type="reset" value="delete all" class="sum">
+			</form>
+			
+		</article>
+		
+		<!-- end Article -->
+	
+	
+		<script src="js/brands.min.js" charset="UTF-8"></script>
+		<script src="js/fontawesome.min.js" charset="UTF-8"></script>
+		<script src="js/solid.min.js" charset="UTF-8"></script>
+		
+	</body>
+</html>
