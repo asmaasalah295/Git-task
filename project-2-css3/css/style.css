@@ -1,0 +1,57 @@
+body 
+{
+	background-image:url('../images/pop-bg.jpg');
+	/*background-size:100% 100%;*/
+	
+}
+
+                    /********* start header *********/
+
+header
+{
+	background:#00dcff96;
+	color:#fff;
+	padding:20px;
+	margin:-9px -9px 90px -8px;
+	position:fixed;
+	width:100%;
+	
+}
+
+span {padding:20px}
+
+form {float:right;margin-right:100px }
+
+label {float:right;}
+
+input {width:80%; height:35px; margin-top:-5px; }
+
+
+					/********* end header *********/
+					
+					
+					
+					/********* start section *********/
+					
+section	{margin-top:100px; background-image:url('../images/aa.jpg'); color:#fff; height:200px}
+
+.div1
+{
+	margin:50px auto;
+	background:#ddd;
+	padding:20px
+}
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					/********* end section *********/
