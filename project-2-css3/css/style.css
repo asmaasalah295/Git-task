@@ -1,13 +1,20 @@
 body 
 {
 	background-image:url('../images/pop-bg.jpg');
-	/*background-size:100% 100%;*/
+	background-size:100% 100%;
 	
+}
+
+* 
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
                     /********* start header *********/
 
-header
+.head
 {
 	background:#00dcff96;
 	color:#fff;
@@ -15,43 +22,287 @@ header
 	margin:-9px -9px 90px -8px;
 	position:fixed;
 	width:100%;
-	
+	top:0;
+	z-index:3;
 }
 
-span {padding:20px}
+/*span {padding:20px}*/
 
-form {float:right;margin-right:100px }
+a {text-decoration:none; padding:20px 20px 30px 20px; color:black}
+
+a:hover 
+{
+	text-decoration:underline; 
+	color:coral; background:#cceeff; 
+	transition:all 1s ease-in-out
+}
+
+.i {margin-left:-23px; color:black}
+
+.ig {margin-left:965px; color:black; margin-top:-3px}
+
+/*form {float:right;margin-right:100px }
 
 label {float:right;}
 
-input {width:80%; height:35px; margin-top:-5px; }
+input {width:20%; height:35px; margin-top:-5px; float:right }*/
+
+
+.as {float:right;color:black; margin-right:50px;}
+
+.ar {float:right; border:none; padding:10px; margin-top:-3px}
+
+.rs {float:right; margin-right:-250px; color:black}
 
 
 					/********* end header *********/
 					
 					
 					
-					/********* start section *********/
+					/********* start section1 *********/
 					
-section	{margin-top:100px; background-image:url('../images/aa.jpg'); color:#fff; height:200px}
+.section1 
+{
+	margin-top:200px; 
+	padding:10px; 
+	background-image:url('../images/aa.jpg');
+	overflow:hidden
+}
+
+
 
 .div1
 {
-	margin:50px auto;
+	margin:50px;
 	background:#ddd;
-	padding:20px
+	padding:20px;
+	width:391px; 
+	height:20px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	resize:horizontal;
+	-webkit-box-shadow:3px 3px 9px #ff253abd,
+			           -3px -3px 9px #0037ffad;
+					   
+	-moz-box-shadow:3px 3px 9px #ff253abd,
+			        -3px -3px 9px #0037ffad;
+			   
+	box-shadow:3px 3px 9px #ff253abd,
+			   -3px -3px 9px #0037ffad
 }
 
+
+.div2 
+{
+	margin:50px;
+	background:#ddd;
+	padding:20px;
+	width:391px; 
+	
+	overflow:hidden;
+	text-overflow:ellipsis;
+	resize:horizontal;
+	-webkit-box-shadow:3px 3px 9px #ff253abd,
+			           -3px -3px 9px #0037ffad;
+					   
+	-moz-box-shadow:3px 3px 9px #ff253abd,
+			        -3px -3px 9px #0037ffad;
+			   
+	box-shadow:3px 3px 9px #ff253abd,
+			   -3px -3px 9px #0037ffad
+}
+
+.flex-container {
+  	 display: flex;
+         flex-wrap: nowrap;
+         background-color: DodgerBlue;
+}
+
+.flex-container > div {
+         background-color: #f1f1f1;
+         width: 90px;
+         margin: 10px;
+         text-align: center;
+         line-height: 75px;
+         font-size: 30px;
+}
+		
 					
+					/********* end section1 *********/
+
 					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					/********* end section *********/
+
+					/********* start section2 *********/
+
+
+
+.section2
+{
+	margin-top:100px; 
+	padding:40px; 
+	background-image:url('../images/pop-bg.jpg');
+	background-size:100% 100%;
+	background-attachment: fixed;
+	perspective:600px;
+	display:flex;
+}
+
+.card
+{
+	width:300px;
+	height:320px;
+	position: relative;
+	transform-style: preserve-3d;
+	margin:7px
+}
+
+.card:hover
+{
+	transform: rotateY(180deg);
+	transition: all 1s ease-in-out;
+	
+}
+
+.card > div
+{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.front {backface-visibility:hidden}
+
+.back1,.back2,.back3
+{
+	
+	padding:20px;
+	text-align: center;
+	z-index:1;
+	transform: rotateY(180deg);
+	backface-visibility:hidden
+}
+
+.back1 p {line-height:30px}
+
+.back1:hover {background:#11506f; transition: all 1s ease-in-out;}
+
+.back1 {background:#eee;}
+
+
+.back2
+{
+	background:#b0f;
+}
+
+.back2 p {line-height:30px}
+
+.back2:hover {background:#11506f; transition: all 1s ease-in-out;}
+
+
+
+.back3
+{
+	background:#cceeff;
+}
+
+.back3 p {line-height:30px}
+
+.back3:hover {background:#11506f; transition: all 1s ease-in-out;}
+
+
+
+					/********* end section2 *********/
+
+
+
+
+
+
+					/********* start section3 *********/
+
+
+
+.section3 
+{
+	margin-top:100px; 
+	padding:30px; 
+	background:#6d28459e;
+	overflow:hidden;
+}
+
+
+.im {float:right; margin-top:-272px}
+
+.fan {margin-left:250px; margin-top:-100px; opacity:0}
+
+
+.fan:hover
+{
+	transform: translate(300px,-200px) scale(1.2,1.2) rotate(360deg);
+	transition: all 1s ease-in-out;
+	opacity:1
+}
+
+
+					/********* end section3 *********/
+
+
+
+
+					/********* start section4 *********/
+
+
+.section4 
+{
+	margin:30px;
+
+	margin-top:100px;
+ 
+	padding:30px; 
+
+	background:#dddddd96;
+
+	overflow:hidden;
+
+	width:485px; 
+
+	height:400px;
+
+	overflow:hidden;
+
+	text-overflow:ellipsis;
+
+	resize:both;
+	
+	column-count:3;
+
+	column-rule:3px solid #dddddd9c;
+
+	column-gap:20px;
+
+	column-width: 200px;
+
+	-webkit-box-shadow:3px 3px 9px #ff253abd,
+			           -3px -3px 9px #0037ffad;
+					   
+	-moz-box-shadow:3px 3px 9px #ff253abd,
+			        -3px -3px 9px #0037ffad;
+			   
+	box-shadow:3px 3px 9px #ff253abd,
+			   -3px -3px 9px #0037ffad;
+}
+
+
+
+.section4 p {text-shadow:1px 1px 6px #b0f}
+
+
+
+
+					/********* end section4 *********/
+
+
+
+
