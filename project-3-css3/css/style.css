@@ -1,0 +1,367 @@
+body 
+{
+	background-image:url('../images/clouds.jpg'); 
+	background-size:100% 100%
+}
+
+* 
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+								/*******    start header1   ***********/
+.head1
+{
+	background:#ddd;
+	left:0;
+	padding:0px;
+	position:fixed;
+	width:100%;
+	top:0;
+}
+
+.toggle
+{
+	display:none;
+	margin-top: 9px;
+	top:-6px;
+	width:150px;
+	float:right;
+	position:relative;
+}
+
+
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	float:right;
+	margin:5px
+}
+
+.switch input { 
+
+	opacity: 0;
+        width: 0;
+        height: 0; 	
+}
+
+.slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+}
+
+.slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+}
+
+input:checked + .slider {
+      background-color: #2196F3;
+}
+
+input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+}
+
+
+input:checked + .slider {
+       background-color: #000;
+}
+
+
+input {display:none}
+
+
+input:checked ~ .minn {
+       display: block !important;
+       position: fixed;
+       right: 0;
+       background-color: #00fff3;
+       top: 60px;
+}									 
+					 
+
+
+@media(max-width:680px)
+{
+	.gg a:nth-child(n+2){
+		display:none
+	}
+	
+	.toggle{
+		display:block
+	}
+}
+.minn 
+{
+	width:340px;
+	height:210px;
+	font-size:30px;
+	background:#00ffff;
+	top:25px;
+	position:absolute;
+	right: -360px;
+	transition: right .5s ease-in-out;
+}
+.minn li
+{
+	list-style:none;
+	padding:10px;
+	cursor:pointer;
+	width:340px;
+	height:70px;
+	text-align:center;
+}
+.minn li:hover
+{
+	background:#eee;
+	transition:all 0.8s ease-in-out
+}
+
+
+
+.gg a {text-decoration:none; padding:20px}
+
+.gg a:nth-child(1) {
+	background-color:blue;
+	color:#fff;
+	position:absolute;
+	top:0;
+	bottom:0;
+}
+
+.gg a:nth-child(n+2) {
+	
+	float:right;
+	color:#002842;
+
+}
+
+.gg a:nth-child(even):hover {
+	background-color:#eee;
+	transition: all 1s ease-in-out;
+	
+}
+
+.gg a:nth-child(odd) {
+	margin-right:-130px
+}
+
+.as {margin-right:9px}
+
+.ad {margin-right:-11px}
+
+
+
+
+									/*******    end header1   ***********/
+									
+									
+									
+									/******** start navigation   ********/
+									
+									
+nav ul {margin-top:-30px;color:#fff; list-style:none; position:fixed;}
+
+nav { color:#fff; text-align: center}
+
+.R 
+{
+	transition:0.5s;
+	background:#0066ff;
+	margin:5px;
+	padding:10px;
+	margin-left:-100px;
+	width:80px
+}
+
+.Rr
+{
+	transition:0.5s;
+	background:#00a1ff;
+	margin:5px;
+	padding:10px;
+	margin-left:-100px;
+	width:80px
+}
+
+.Rf
+{
+	transition:0.5s;
+	background:#007eff;
+	margin:5px;
+	padding:10px;
+	margin-left:-100px;
+	width:80px
+}
+
+.R:hover,.Rr:hover,.Rf:hover {width:80px; margin-left:-50px; background:#00cfff}
+									
+									
+									/********  end nevigation    ********/
+									
+									
+									
+									
+									/*******    start header2   ***********/
+									
+									
+.head2
+{
+	background-image:url('../images/80.jpg');
+	background-size:100% 100%;
+	margin-top:120px;
+	padding:20px;
+	text-align:center;
+}
+									
+@media (max-width: 900px) {
+	.img {
+		content:url(../images/naruto_2.png);
+		padding: 0 202px;
+		width:100%
+    }
+}									
+									
+@media (max-width: 828px) {
+	.img {
+		content:url(../images/obito.png);
+		padding: 0 202px;
+		width:100%
+    }
+}		
+
+@media (max-width: 768px) {
+	.img {
+		content:url(../images/itachi.png);
+		padding: 0 202px;
+		width:100%
+    }
+}		
+
+
+@media (max-width: 680px) {
+	.img {
+		content:url(../images/naruto.png);
+		padding: 0 202px;
+		width:100%
+    }
+}					
+						
+									
+									/*******    end header2   ***********/
+									
+									
+							
+									
+									
+								   /********** start section1   **********/
+								   
+								   
+.section1
+{
+	margin-top:50px;
+	text-align:center;
+	background-image:url(../images/liberty.jpg);
+	background-size:100% 100%;
+	background-attachment:fixed;
+	padding:90px;
+}
+
+.fan:hover  
+{
+	animation: fan 0.1s infinite;
+	
+}
+
+
+
+@keyframes fan {
+	
+	0%, 100%{
+		
+		transform: rotate(0deg);
+		content: url(../images/fanc.png)
+	}
+	
+	10% {
+		
+		transform: rotate(36deg);
+		content: url(../images/fanc2.png)
+		
+	}
+		
+	20% {
+		
+		transform: rotate(72deg);
+		content: url(../images/fanc4.png)
+	}
+								   
+	30% {
+		
+		transform: rotate(108deg);
+		content: url(../images/fanc5.png)
+	}
+}							   
+								   
+								   
+								    /**********   end section1   **********/
+									
+									
+									
+									
+									/********** start section2   **********/
+									
+									
+.section2 
+{ 
+	background:#000000;
+	color:#fff;
+	margin:90px;
+	margin-bottom:0;
+	padding:90px;
+	height:600px;
+	text-align:center;
+	font-family: 'death';
+	font-size:90px
+}
+									
+@font-face {
+		
+	font-family: 'death';
+	src: url(../font/Death_Note_Font_by_Karlibell22.ttf);
+}
+									
+									
+									
+									
+									
+									 /**********   end section2   **********/
+															 
+					 
