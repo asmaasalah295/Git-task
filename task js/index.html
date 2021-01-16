@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Asmaa Salah task JS</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+                <!--       start header      -->
+        <header class="head1">
+            <a  class="home" href="#home">Home</a>
+            <a href="#sharingan">sharingan 
+                <img src="images/black.png" style="width: 15px;" alt="pp" />
+            </a>
+            <a href="#itachi">itachi
+                <img src="images/black2.png" style="width: 15px;" alt="pp" />
+            </a>
+
+            <div>
+                <form>
+                    <input type="search" placeholder="Shearch...." name="search" />
+                </form>
+            </div>
+        </header>
+                <!--        End header         -->
+
+        
+                <!--        Start Seaction          -->
+        <section class="sec1">
+            <header class="head2">
+               <div class="in">
+                   <p>type the first number</p>
+               </div>
+               <input type="text" placeholder="Enter Number 1" id="number1"/>
+
+               <div class="in">
+                <p>type the second number</p>
+               </div>
+               <input type="text" placeholder="Enter Number 2" id="number2"/>
+
+               <div class="in">the plus of them is :  <span id="divv"></span></div>
+               <button class="radius" id="ad" onclick="plus()">add</button>
+            </header>
+
+            <hr/>
+
+             <header class="head3">
+                <button class="radius" onclick="pro()">prompt</button>
+                <P id="prom"></P>
+             </header>
+
+             <hr/>
+
+             <header class="head4">
+
+                <button onclick="this.innerText = Date()" class="on"
+                        ondblclick="this.innerText = 'not a double click'">
+                    tell me time on click
+                </button>
+
+                <hr/>
+
+                <input type="text" class="counter"
+                        onkeyup="document.getElementById('count').innerText = this.value.length"/>
+                <span id="count"></span>
+
+                <hr/>
+
+                <input type="color" id="col" onchange="this.value" class="c"/>
+                <span class="co" 
+                    onmouseenter="this.style.background = document.getElementById('col').value">
+                    Hover to change background color
+                </span> 
+             </header>
+
+             <hr/>
+
+             <header class="head5">
+                <input type="text" class="nu" id="numm"/>
+                <h3>choose number of elements to store(maximum 19 user)</h3>
+                <br/>
+                
+                <button class="arr" id="makarr()"
+                    onclick="isNaN(document.getElementById('numm').value) ||
+                    document.getElementById('numm').value == '' ? 
+                    ( confirm('type valid number') ? alert('good') :
+                    alert('not aprroved ans') )  : 
+                    makarr(Number(document.getElementById('numm').value))  "
+                
+                >mack array</button> 
+
+                <div id="user"></div>
+            </header> 
+
+
+        </section>
+                <!--        End Section             -->
+
+        <script src="java.js"></script>
+    </body>
+</html>

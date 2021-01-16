@@ -1,0 +1,158 @@
+body {
+    /*background-image: url('images/1828458.jpg');
+    background: black;*/
+}
+
+.head1 {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin-left: -8px;
+  padding: 14px;
+  z-index: 1;
+}
+
+.head1 a {
+    padding: 19px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    margin-left: 40px;
+}
+
+.head1 a:hover {
+    background: #100dd8;
+    color: white;
+}
+
+.head1 .home {
+    background: blue;
+    color: rgb(242, 243, 243);
+}
+
+.head1 div input{
+    float: right;
+   margin: -28px 70px 0 0;
+   
+    font-size: 17px;
+    padding: 6px;
+    border: none;
+}
+
+.sec1 {
+    background-image: url('images/1828458.jpg');
+    padding: 20px;
+    background-attachment: fixed;
+    background-size: 100 100;
+
+}
+
+.sec1 .head2 {
+    text-align: center;
+    background: darkgrey;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .head2, .head3 {
+      width: 40%;
+      margin-left: 240px;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .head2, .head3 {
+      width: 92%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    
+    .head4, .head5 {
+      width: 38%;
+      margin-left: 240px;
+      
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    
+    .head4, .head5 {
+      width: 89%;
+    }
+  }
+
+  
+
+.in {
+    background: rgb(197 201 204);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 3px 3px 9px #ff253abd, -3px -3px 9px #0037ffad;
+    margin: 20px;
+}
+
+.head2 input {
+    background: rgb(197 201 204);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 3px 3px 9px #ff253abd, -3px -3px 9px #0037ffad;
+    border: none;
+}
+
+.radius {
+    border-top-left-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+    color: #000;
+    background:  linear-gradient(to right ,#ff253abd, #0037ffad) ;
+    padding: 10px;
+    outline: none;
+}
+
+.head3 {
+    background:  darkgrey;
+    text-align: center;
+    padding: 30px;
+}
+
+.head4 {
+    text-align: center;
+    background: darkgrey;
+    padding: 40px;
+}
+
+.on {
+    padding: 15px;
+    border: none;
+    font-size: 19px;
+}
+
+.counter {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.c {padding: 8px;}
+.co {padding: 8px; transition: all 2s ease-in-out;}
+
+.head5 {
+    text-align: center;
+    background: darkgrey;
+    padding: 40px;
+}
+
+.head5 .nu {
+    padding: 14px;
+    font-size: 15px;
+}
+
+.arr {
+    padding: 10px;
+}
