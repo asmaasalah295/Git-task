@@ -1,0 +1,256 @@
+
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root{
+  
+  --font-semi: 600;
+}
+
+/*===== Colores =====*/
+:root{
+  --first-color: #4070F4;
+  --second-color: #0E2431;
+}
+
+/*===== Fuente y tipografia =====*/
+:root{
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*===== Margenes =====*/
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  transition: all 1s ease-in-out;
+}
+h1,h2,p{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+.nav-link:hover {
+    border: 1px solid rgb(75, 186, 214);
+    transition: all 1s ease-in-out;
+}
+
+.navba {
+    text-align: center;
+}
+
+/*   Section   */
+
+.section-title{
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-4);
+    text-align: center;
+  }
+  .section-title::after{
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+  }
+  .section{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+/*   Section   */
+
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+  }
+
+
+  /* ===== ABOUT =====*/
+.about__container{
+    row-gap: 2rem;
+    text-align: center;
+  }
+  .about__subtitle{
+    margin-bottom: var(--mb-2);
+  }
+  .about__img{
+    justify-self: center;
+  }
+  .about__img img{
+    width: 200px;
+    border-radius: .5rem;
+  }
+
+  /* ===== SKILLS =====*/
+.skills__container{
+    row-gap: 2rem;
+    text-align: center;
+  }
+  .skills__subtitle{
+    margin-bottom: var(--mb-2);
+  }
+  .skills__text{
+    margin-bottom: var(--mb-4);
+  }
+  .skills__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: .5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  }
+  .skills__icon{
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: var(--first-color);
+  }
+  .skills__names{
+    display: flex;
+    align-items: center;
+  }
+  .skills__bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: var(--z-back);
+  }
+  .skills__html{
+    width: 95%;
+  }
+  .skills__css{
+    width: 85%;
+  }
+  .skills__js{
+    width: 35%;
+  }
+  .skills__bootstrap{
+    width: 75%;
+  }
+
+  .skills__img{
+    border-radius: .5rem;
+    width: 450px;
+  }
+  
+
+  /* ===== CONTACT =====*/
+.contact__input{
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1.5px solid var(--second-color);
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px){
+  body{
+    margin: 0;
+  }
+  .section{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title{
+    margin-bottom: var(--mb-6);
+  }
+  .section-title::after{
+    width: 80px;
+    top: 3rem;
+  }
+
+  .about__container, .skills__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: initial;
+  }
+  .about__img img{
+    width: 300px;
+  }
+
+  .contact__form{
+    width: 360px;
+  }
+  .contact__container{
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+footer {
+  text-align: center;
+  background: rgb(0 0 0 / 86%);
+  color: azure;
+  padding: 20px;
+}
+  
